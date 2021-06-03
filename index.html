@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Геоотзыв</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <script id="template" type="text/x-handlebars-template">
+      <div class="comments">
+      </div>
+      <h1 class="title">Отзыв:</h1>
+      <form class="form">
+        <input type="text" id="name" placeholder="Укажите ваше имя" required />
+        <input type="text" id="place" placeholder="Укажите место" required/>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Оставить отзыв" required
+        ></textarea>
+        <button class="addButton">Добавить</button>
+      </form>
+    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <div id="map"></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
